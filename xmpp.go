@@ -40,7 +40,7 @@ const (
 var DefaultConfig tls.Config
 
 type Client struct {
-	tls *tls.Conn // connection to server
+	tls net.Conn // connection to server
 	jid string    // Jabber ID for our connection
 	p   *xml.Decoder
 }
