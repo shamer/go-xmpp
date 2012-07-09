@@ -340,9 +340,9 @@ type clientPresence struct {
 	Type    string   `xml:"type,attr"` // error, probe, subscribe, subscribed, unavailable, unsubscribe, unsubscribed
 	Lang    string   `xml:"lang,attr"`
 
-	Show     string  `xml:"show,attr"`// away, chat, dnd, xa
-	Status   string  `xml:"status,attr"`// sb []clientText
-	Priority string  `xml:"priority,attr"`
+	Show     string  `xml:"show"`// away, chat, dnd, xa
+	Status   string  `xml:"status"`// sb []clientText
+	Priority string  `xml:"priority"`
 	Error    *clientError
 }
 
